@@ -1,0 +1,691 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "phoneSlot",
+              "elicitationRequired": true,
+              "type": "AMAZON.PhoneNumber",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1470608803271.738023834004"
+              }
+            }
+          ],
+          "name": "textMeIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help please",
+            "help me please",
+            "help me",
+            "help",
+            "ask this offer for help",
+            "for help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "how\u0027s it going",
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "numberItem",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "numberIntent",
+          "samples": [
+            "my mailer number is {numberItem}",
+            "my campaign number is {numberItem}",
+            "my number is {numberItem}",
+            "the campaign number is {numberItem}",
+            "mailer number {numberItem}",
+            "campaign number {numberItem}",
+            "{numberItem}",
+            "campaign {numberItem}",
+            "number {numberItem}",
+            "mailing number {numberItem}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "generalItem",
+              "type": "generalType"
+            }
+          ],
+          "name": "generalIntent",
+          "samples": [
+            "ask this offer whats included",
+            "whats included",
+            "{generalItem}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "phoneSlot",
+              "type": "AMAZON.PhoneNumber",
+              "samples": [
+                "{phoneSlot}",
+                "send it to {phoneSlot}",
+                "text me at {phoneSlot}"
+              ]
+            }
+          ],
+          "name": "textMeIntent",
+          "samples": [
+            "send a text",
+            "send me the text",
+            "SMS",
+            "send me that text",
+            "text me",
+            "text",
+            "send me a text"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "storyIntent",
+          "samples": [
+            "next please",
+            "Continue please",
+            "Next one",
+            "next",
+            "Continue"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "about the sponsor"
+              }
+            },
+            {
+              "name": {
+                "value": "about our sponsor"
+              }
+            },
+            {
+              "name": {
+                "value": "from our sponsor"
+              }
+            },
+            {
+              "name": {
+                "value": "a word from our sponsor"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Exhibit 5",
+                  "exhibit 5"
+                ],
+                "value": "exhibit five"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Exhibit 4",
+                  "exhibit 4"
+                ],
+                "value": "exhibit four"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Exhibit 3",
+                  "exhibit 3"
+                ],
+                "value": "exhibit three"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Exhibit 2",
+                  "exhibit 2"
+                ],
+                "value": "exhibit two"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Exhibit 1",
+                  "exhibit 1"
+                ],
+                "value": "exhibit one"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Wing 5",
+                  "wing 5"
+                ],
+                "value": "wing five"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Wing 4",
+                  "wing 4"
+                ],
+                "value": "wing four"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Wing 3",
+                  "wing 3"
+                ],
+                "value": "wing three"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Wing 2",
+                  "wing 2"
+                ],
+                "value": "wing two"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "Wing 1",
+                  "wing 1"
+                ],
+                "value": "wing one"
+              }
+            },
+            {
+              "name": {
+                "value": "Yvonne"
+              }
+            },
+            {
+              "name": {
+                "value": "Amy"
+              }
+            },
+            {
+              "name": {
+                "value": "Amanda"
+              }
+            },
+            {
+              "name": {
+                "value": "Hear a word from our sponsor"
+              }
+            },
+            {
+              "name": {
+                "value": "need more time"
+              }
+            },
+            {
+              "name": {
+                "value": "ready"
+              }
+            },
+            {
+              "name": {
+                "value": "cruise"
+              }
+            },
+            {
+              "name": {
+                "value": "resort"
+              }
+            },
+            {
+              "name": {
+                "value": "beach"
+              }
+            },
+            {
+              "name": {
+                "value": "fix my flat"
+              }
+            },
+            {
+              "name": {
+                "value": "drive"
+              }
+            },
+            {
+              "name": {
+                "value": "make my flight"
+              }
+            },
+            {
+              "name": {
+                "value": "fly"
+              }
+            },
+            {
+              "name": {
+                "value": "mountains"
+              }
+            },
+            {
+              "name": {
+                "value": "do you offer travel discounts"
+              }
+            },
+            {
+              "name": {
+                "value": "how easy is it to switch"
+              }
+            },
+            {
+              "name": {
+                "value": "is it easy to switch"
+              }
+            },
+            {
+              "name": {
+                "value": "is it easy to switch to Tax Act"
+              }
+            },
+            {
+              "name": {
+                "value": "can i speak to an accountant"
+              }
+            },
+            {
+              "name": {
+                "value": "can i talk to an accountant"
+              }
+            },
+            {
+              "name": {
+                "value": "can i speak with an accountant"
+              }
+            },
+            {
+              "name": {
+                "value": "can I talk to an accountant if I have questions"
+              }
+            },
+            {
+              "name": {
+                "value": "I\u0027m self employed"
+              }
+            },
+            {
+              "name": {
+                "value": "what if I\u0027m self employed"
+              }
+            },
+            {
+              "name": {
+                "value": "can i file if I\u0027m self employed"
+              }
+            },
+            {
+              "name": {
+                "value": "is tax act cheaper than turbo tax"
+              }
+            },
+            {
+              "name": {
+                "value": "why is ta act cheaper than turbo tax"
+              }
+            },
+            {
+              "name": {
+                "value": "are there fast meal options"
+              }
+            },
+            {
+              "name": {
+                "value": "does home chef offer fast meal options"
+              }
+            },
+            {
+              "name": {
+                "value": "how do i sign up"
+              }
+            },
+            {
+              "name": {
+                "value": "has the old fake tunnel trick worked on the road runner"
+              }
+            },
+            {
+              "name": {
+                "value": "do rockets make the coyote faster than the road runner"
+              }
+            },
+            {
+              "name": {
+                "value": "did the coyote catch the road runner?"
+              }
+            },
+            {
+              "name": {
+                "value": "how do i join trip-a"
+              }
+            },
+            {
+              "name": {
+                "value": "why do i also get free I.d. monitoring"
+              }
+            },
+            {
+              "name": {
+                "value": "can i save on shopping"
+              }
+            },
+            {
+              "name": {
+                "value": "how much can i save in the year ahead"
+              }
+            },
+            {
+              "name": {
+                "value": "can i save my auto insurance"
+              }
+            },
+            {
+              "name": {
+                "value": "can trip-a save me on spares and car expenses"
+              }
+            },
+            {
+              "name": {
+                "value": "does triple-a do car repair"
+              }
+            },
+            {
+              "name": {
+                "value": "how much can i save on a new car"
+              }
+            },
+            {
+              "name": {
+                "value": "can trip a help me book travel"
+              }
+            },
+            {
+              "name": {
+                "value": "how do i save money on travel"
+              }
+            },
+            {
+              "name": {
+                "value": "can i still get free printed road maps"
+              }
+            },
+            {
+              "name": {
+                "value": "how likely is it i\u0027ll need trip-a this year"
+              }
+            },
+            {
+              "name": {
+                "value": "how does triple-a\u0027s bicycle service work"
+              }
+            },
+            {
+              "name": {
+                "value": "will triple a bring me a new battery"
+              }
+            },
+            {
+              "name": {
+                "value": "how do i save $75 on every service call"
+              }
+            },
+            {
+              "name": {
+                "value": "whats included in roadside assistance"
+              }
+            },
+            {
+              "name": {
+                "value": "doesn\u0027t my new car already include roadside assistance"
+              }
+            },
+            {
+              "name": {
+                "value": "can i join using Alexa"
+              }
+            },
+            {
+              "name": {
+                "value": "how does the monthly payment work"
+              }
+            },
+            {
+              "name": {
+                "value": "why is this offer limited to 10 days"
+              }
+            },
+            {
+              "name": {
+                "value": "why is being pre-registered special?"
+              }
+            },
+            {
+              "name": {
+                "value": "What’s included with this free offer?"
+              }
+            },
+            {
+              "name": {
+                "value": "is paying monthly an option"
+              }
+            },
+            {
+              "name": {
+                "value": "why is it only 10 days long"
+              }
+            },
+            {
+              "name": {
+                "value": "nada"
+              }
+            },
+            {
+              "name": {
+                "value": "nope"
+              }
+            },
+            {
+              "name": {
+                "value": "let\u0027s do this"
+              }
+            },
+            {
+              "name": {
+                "value": "I want to join up"
+              }
+            },
+            {
+              "name": {
+                "value": "i wanna join "
+              }
+            },
+            {
+              "name": {
+                "value": "special"
+              }
+            },
+            {
+              "name": {
+                "value": "join up"
+              }
+            },
+            {
+              "name": {
+                "value": "join"
+              }
+            },
+            {
+              "name": {
+                "value": "membership"
+              }
+            },
+            {
+              "name": {
+                "value": "save money"
+              }
+            },
+            {
+              "name": {
+                "value": "protect me"
+              }
+            },
+            {
+              "name": {
+                "value": "hear more"
+              }
+            },
+            {
+              "name": {
+                "value": "no"
+              }
+            },
+            {
+              "name": {
+                "value": "yes"
+              }
+            },
+            {
+              "name": {
+                "value": "join now"
+              }
+            },
+            {
+              "name": {
+                "value": "why\u0027s there a time limit"
+              }
+            },
+            {
+              "name": {
+                "value": "what\u0027s so special"
+              }
+            },
+            {
+              "name": {
+                "value": "what\u0027s special"
+              }
+            },
+            {
+              "name": {
+                "value": "what is special"
+              }
+            },
+            {
+              "name": {
+                "value": "what is included"
+              }
+            },
+            {
+              "name": {
+                "value": "what\u0027s included"
+              }
+            }
+          ],
+          "name": "generalType"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "acme6789"
+              }
+            },
+            {
+              "name": {
+                "value": "acme3456"
+              }
+            },
+            {
+              "name": {
+                "value": "AAA2345"
+              }
+            },
+            {
+              "name": {
+                "value": "aaa1234"
+              }
+            }
+          ],
+          "name": "campaignType"
+        }
+      ],
+      "invocationName": "this special offer"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What number shall I text"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please tell me your mobile number"
+          },
+          {
+            "type": "PlainText",
+            "value": "what is your mobile number"
+          }
+        ],
+        "id": "Elicit.Slot.1470608803271.738023834004"
+      }
+    ]
+  }
+}

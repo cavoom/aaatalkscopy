@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Did you receive a campaign mailing? Just enter your campaign code, and Alexa will answer all of your questions!",
+          "examplePhrases": [
+            "Alexa, open this special offer",
+            "Alexa, ask this special offer for help",
+            "Alexa, ask this special offer whats included"
+          ],
+          "keywords": [
+            "mailing",
+            "campaign",
+            "ADMR"
+          ],
+          "name": "This Special Offer",
+          "description": "This skill provides more details about your mailing. Just tell Alexa your mailing campaign number, and we\u0027ll answer your questions, and help you get more information - anytime you like!",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "We\u0027re adding campaigns daily. Watch your mailbox for campaigns that leverage this skill!",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "en-US",
+            "language": "en"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "To start, say, \"Alexa, open this special offer\". When prompted for your campaign number, just say 12345.",
+      "category": "BUSINESS_AND_FINANCE",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:154962977054:function:admrAlexa"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:154962977054:function:admrAlexa"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://admr.com/terms-and-conditions/",
+          "privacyPolicyUrl": "https://admr.com/privacy-policy/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
